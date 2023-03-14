@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="0dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="52dp" />
+
+    <RadioGroup
+        android:id="@+id/RatingRadioGroup"
+        android:layout_width="408dp"
+        android:layout_height="297dp"
+        android:padding="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="79dp">
+
+
+        <RadioButton
+            android:id="@+id/excellentRB"
+            android:layout_width="105dp"
+            android:layout_height="wrap_content"
+            android:text="@string/excellent"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="59dp" />
+
+        <RadioButton
+            android:id="@+id/vgoodRB"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:text="Very Good"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="107dp" />
+
+        <RadioButton
+            android:id="@+id/goodRB"
+            android:layout_width="78dp"
+            android:layout_height="wrap_content"
+            android:text="Good"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="155dp" />
+
+        <RadioButton
+            android:id="@+id/satisfactoryRB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Satisfactory"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="203dp" />
+
+        <RadioButton
+            android:id="@+id/poorRB"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:text="Poor"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="251dp" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/sumbitBT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="52dp"
+        android:text="Sumbit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/RatingRadioGroup"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/cancelBT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="52dp"
+        android:text="Cancel"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/sumbitBT"
+        app:layout_constraintTop_toBottomOf="@+id/RatingRadioGroup"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/titletextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:text="Please Rate Me!"
+        app:layout_constraintBottom_toTopOf="@+id/RatingRadioGroup"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        tools:layout_editor_absoluteX="150dp"
+        tools:ignore="MissingConstraints" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
